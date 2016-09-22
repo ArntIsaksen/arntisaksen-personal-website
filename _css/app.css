@@ -1,0 +1,157 @@
+/*Typography */
+/*Colour */
+/*$primary-color: #444444 */
+/*Space */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: Merriweather, serif;
+  color: #212121; }
+
+h1 {
+  font-size: 4em;
+  font-weight: 700; }
+
+h2 {
+  font-size: 3em; }
+
+h3 {
+  font-size: 2em; }
+
+h4 {
+  font-size: 1.5em; }
+
+a {
+  color: #607D8B; }
+
+a:hover {
+  color: #CFD8DC; }
+
+.button {
+  color: #FFFFFF;
+  background-color: #607D8B; }
+
+.button:hover, .button:focus {
+  background-color: #CFD8DC;
+  color: #212121; }
+
+.button.primary {
+  background-color: #607D8B;
+  color: #ffffff; }
+
+.button.primary:hover, .button.primary:focus {
+  background-color: #CFD8DC;
+  color: #ffffff; }
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+30,cfd8dc+100,cfd8dc+101 */
+#intro {
+  /* Old browsers */
+  background: #ffffff;
+  /* FF3.6-15 */
+  background: -moz-linear-gradient(left, #ffffff 30%, #cfd8dc 100%, #cfd8dc 101%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient(left, #ffffff 30%, #cfd8dc 100%, #cfd8dc 101%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: linear-gradient(to right, #ffffff 30%, #cfd8dc 100%, #cfd8dc 101%);
+  /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cfd8dc',GradientType=1 ); }
+
+#small-screen-intro {
+  background: #ffffff; }
+
+#intro-text {
+  top: 50%; }
+
+.img_icon {
+  width: 5em;
+  margin: 1em; }
+
+.no-background {
+  background-color: #ffffff; }
+
+section {
+  margin: 3.5em 0; }
+
+section:first-of-type {
+  margin: 0; }
+
+.title-bar {
+  background-color: #455A64; }
+
+.top-bar, .top-bar ul {
+  background-color: #ffffff; }
+
+#face-img {
+  overflow: hidden; }
+
+#face-img > img {
+  /*max-width: 100% */
+  width: 100%;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transform: translateX(-20%);
+  -moz-transform: translateX(-20%);
+  -o-transform: translateX(-20%);
+  -ms-transform: translateX(-20%);
+  transform: translateX(-20%); }
+
+/*.center-align
+ * position: relative
+ * top: 50%
+ * transform: translateY(50%)
+ * border: 1px solid black */
+.card {
+  border-radius: 2px;
+  margin: 1em 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+
+.card > h3 {
+  padding: 0.5em; }
+
+/*  MORPH
+ * from: http://designshack.net/articles/css/joshuajohnson-2/ */
+.morph {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.morph:hover {
+  border-radius: 12%;
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1); }
+
+/*Portfolio */
+article h1 {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  font-size: 3.5em; }
+
+article h2 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
+
+article h3 {
+  padding-top: 1em;
+  padding-bottom: 0.5em; }
+
+.inline-img {
+  margin-top: 0.5em;
+  padding-bottom: 2em; }
+
+.portfolio-header {
+  background: #607D8B; }
+
+.portfolio-header > img {
+  opacity: 0.8; }
+
+/*# sourceMappingURL=app.css.map */

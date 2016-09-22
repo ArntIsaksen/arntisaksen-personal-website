@@ -1,0 +1,176 @@
+/*Typography*/
+$font-stack: Merriweather, serif
+$font-base-size: 1em
+
+/*Colour*/
+$background-color: #ffffff
+/*$primary-color: #444444*/
+
+$primary-color-dark:   #455A64
+$primary-color:        #607D8B
+$primary-color-light:  #CFD8DC
+$primary-color-text:   #FFFFFF
+$accent-color:         #FFC107
+$primary-text-color:   #212121
+$secondary-text-color: #757575
+$divider-color:        #BDBDBD
+
+/*Space*/
+$padding: 0.5em
+
+body, h1, h2, h3, h4, h5, h6
+    font-family: $font-stack
+    color: $primary-text-color
+    
+h1
+    font-size: $font-base-size * 4
+    font-weight: 700
+
+h2
+    font-size: $font-base-size * 3
+    
+h3
+    font-size: $font-base-size * 2
+    
+h4
+    font-size: $font-base-size * 1.5
+
+a
+    color: $primary-color
+
+a:hover
+    color: $primary-color-light
+
+.button
+    color: $primary-color-text
+    background-color: $primary-color
+    
+.button:hover, .button:focus
+    background-color: $primary-color-light
+    color: $primary-text-color
+
+.button.primary
+    background-color: $primary-color
+    color: $background-color
+
+.button.primary:hover, .button.primary:focus
+    background-color: $primary-color-light
+    color: $background-color
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+30,cfd8dc+100,cfd8dc+101 */
+#intro
+    /* Old browsers */
+    background: #ffffff
+    /* FF3.6-15 */
+    background: -moz-linear-gradient(left,  #ffffff 30%, #cfd8dc 100%, #cfd8dc 101%)
+    /* Chrome10-25,Safari5.1-6 */
+    background: -webkit-linear-gradient(left,  #ffffff 30%,#cfd8dc 100%,#cfd8dc 101%)
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: linear-gradient(to right,  #ffffff 30%,#cfd8dc 100%,#cfd8dc 101%)
+    /* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cfd8dc',GradientType=1 )
+
+#small-screen-intro
+    background: $background-color
+    
+#intro-text
+    top: 50%
+    
+
+.img_icon
+    width: 5em
+    margin: 1em
+
+.no-background
+    background-color: $background-color
+    
+section
+    margin: 3.5em 0
+
+section:first-of-type
+    margin: 0
+
+.title-bar
+    background-color: $primary-color-dark
+
+.top-bar, .top-bar ul
+    background-color: $background-color
+    
+#face-img
+    overflow: hidden
+
+#face-img > img
+    /*max-width: 100%
+    width: 100%
+    -webkit-transform: scale(1.1)
+    -moz-transform: scale(1.1)
+    -o-transform: scale(1.1)
+    -ms-transform: scale(1.1)
+    transform: scale(1.1)
+
+    -webkit-transform: translateX(-20%)
+    -moz-transform: translateX(-20%)
+    -o-transform: translateX(-20%)
+    -ms-transform: translateX(-20%)
+    transform: translateX(-20%)
+
+/*.center-align
+    position: relative
+    top: 50%
+    transform: translateY(50%)
+    border: 1px solid black*/
+
+.card
+    border-radius: 2px
+    margin: 1em 0
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1)
+
+.card:hover
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+
+.card > h3
+    padding: $padding
+
+/*  MORPH
+	from: http://designshack.net/articles/css/joshuajohnson-2/ */
+.morph
+    -webkit-transition: all 0.5s ease
+    -moz-transition: all 0.5s ease
+    -o-transition: all 0.5s ease
+    -ms-transition: all 0.5s ease
+    transition: all 0.5s ease
+ 
+.morph:hover
+    border-radius: 12%
+    -webkit-transform: scale(1.10, 1.10)
+    -moz-transform: scale(1.10, 1.10)
+    -o-transform: scale(1.10, 1.10)
+    -ms-transform: scale(1.10, 1.10)
+    transform: scale(1.10, 1.10)
+
+/*Portfolio*/
+
+article h1
+    padding-top: $padding * 2
+    padding-bottom: $padding
+    font-size: 3.5em
+
+article h2
+    padding-top: $padding
+    padding-bottom: $padding
+
+article h3
+    padding-top: $padding * 2
+    padding-bottom: $padding
+
+.inline-img
+    margin-top: $padding
+    padding-bottom: $padding * 4
+    
+
+.portfolio-header
+    background: $primary-color
+
+.portfolio-header > img
+    opacity: 0.8
