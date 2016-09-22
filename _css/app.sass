@@ -23,6 +23,7 @@ body, h1, h2, h3, h4, h5, h6
     color: $primary-text-color
     
 h1
+    margin-top: $padding
     font-size: $font-base-size * 4
     font-weight: 700
 
@@ -44,9 +45,15 @@ a:hover
 .button
     color: $primary-color-text
     background-color: $primary-color
-    
+
+.button h4
+    color: $primary-color-text
+
 .button:hover, .button:focus
     background-color: $primary-color-light
+    color: $primary-text-color
+
+.button:hover h4
     color: $primary-text-color
 
 .button.primary
@@ -69,6 +76,9 @@ a:hover
     background: linear-gradient(to right,  #ffffff 30%,#cfd8dc 100%,#cfd8dc 101%)
     /* IE6-9 */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cfd8dc',GradientType=1 )
+
+#introduction-text
+    margin-top: $padding * 5
 
 #small-screen-intro
     background: $background-color
@@ -130,7 +140,9 @@ section:first-of-type
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
 
 .card > h3
+    background-color: $primary-color
     padding: $padding
+    color: $primary-color-text
 
 /*  MORPH
 	from: http://designshack.net/articles/css/joshuajohnson-2/ */
