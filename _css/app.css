@@ -157,13 +157,17 @@ article h3 {
   padding-bottom: 0.5em; }
 
 .inline-img {
-  margin-top: 0.5em;
-  padding-bottom: 2em; }
+  padding-top: 5em;
+  padding-bottom: 5em; }
 
 .portfolio-header {
   background: #607D8B; }
 
 .portfolio-header > img {
   opacity: 0.8; }
+
+video {
+  margin-top: 2em;
+  margin-bottom: 2em; }
 
 /*# sourceMappingURL=app.css.map */
