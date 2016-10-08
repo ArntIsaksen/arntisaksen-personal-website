@@ -37,95 +37,86 @@
         <div class="medium-10 medium-offset-1 columns">
             <h1 class="hide-for-small-only">Redesign: GoPros side for sammenligning av kamera</h1>
             <h1 class="show-for-small-only">Redesign: GoPros side for sammen-ligning av kamera</h1>
-            <p><i>Dette er et redesign jeg gjorde av den gamle kamerasammenligningssiden til GoPro. Siden den gang har har GoPro gjort noen endringer på denne siden. Men jeg mener at det fremdeles er noen interessante idéer i dette redesignet.</i></p>
+            <p><i>Dette er et redesign jeg gjorde av den gamle kamerasammenligningssiden til GoPro. Den nye siden har noen forbedringer. Men jeg mener at det fremdeles er noen interessante idéer i mitt forslag som GoPro kunne vurdert å implementere.</i></p>
             
-            <p> Jeg tok en tur innom GoPro sine sider for å undersøke hva forskjellene mellom de ulike kameramodellene var. Jeg oppdaget fort at det var nesten umulig å å gjøre på en rask og oversiktlig måte. Litt overraskende siden jeg tenkte at å raskt kunne sammenligne de ulike modeller var kamerasammenlignerens hovedoppgave. Derfor satt jeg av litt tid til å finne ut hvordan jeg, med få grep, kunne gjøre det litt lettere.</p>
-        
+            <p> Jeg tok en tur innom GoPro sine sider for å undersøke hva forskjellene mellom de ulike kameramodellene var. Det tok ikke så lang tid før jeg oppdaget at det ikke var så enkelt å sammenligne kameraene som jeg trodde det skulle være. Litt overraskende siden jeg tenkte at å raskt kunne sammenligne funksjonene til de ulike modeller var kamerasammenlignerens hovedoppgave. Derfor satt jeg av litt tid til å finne ut hvordan jeg, med få grep, kunne gjøre hele prosessen enklere.</p>
+            <h2>Produktnavn og bilde</h2>
             <div class="row">
-                <div class="large-8 columns">
+                <div class="columns">
                     <a href="../_img/_portfolio/gopro/Cameras.png">
                         <img class="inline-img" src="../_img/_portfolio/gopro/Cameras.png">
                     </a>
                 </div>
-                <div class="large-4 columns">
-                    <blockquote>Kameramodellene.</blockquote>
-                </div>
             </div>
-            <p>Tousled authentic live-edge, selvage pour-over jean shorts vegan intelligentsia. Shoreditch gastropub chartreuse disrupt banh mi umami synth poke. Venmo lomo post-ironic letterpress polaroid. Lumbersexual cliche tbh, keytar umami neutra try-hard listicle DIY put a bird on it deep v humblebrag you probably haven't heard of them meggings selfies. </p>
+            <p>Hvis vi begynner øverst på siden så ser vi kameraene som vi kan sammenligne. Men med en gang du begynner å gå videre nedover siden forsvinner produktnavnene og bildene forbi toppen av nettleser-vinduet. Som vi si at du fra nå av må huske hvilket kamera som tilhører hvilken kolonne. Det er ikke usannsynlig at du husker hvilket kamera som er lengst til venstre og til høyre, men de i midten kan raskt bli ganske vanskelig å holde styr på. Noe som kanskje fører til at du må scrolle opp og ned på siden for å sjekke hvilke kameramodeller som tilhører de ulike kolonnene.</p>
+            <p>Dette kan løses ved å sørge for at navnene og bildene av de ulike kameraene følger med deg etterhvert som du scroller nedover siden. Slik som videoen under viser.</p>
             <video class="columns" src="../_img/_portfolio/gopro/scroll-animation.m4v" controls preload>
                 <p> Try this page in a modern browser! Or you can <a  href="../_img/_portfolio/gopro/scroll-animation.m4v">download the  video</a> instead.</p>
             </video>
-            <p>Tousled locavore trust fund, bicycle rights venmo bespoke schlitz chia butcher hoodie artisan cornhole. Flannel copper mug synth woke. Shabby chic post-ironic butcher celiac tilde before they sold out.</p>
+            <h2>F.O.V (Field of View)</h2>
+            <!--<p>Skateboard stumptown hot chicken, banh mi blog kogi asymmetrical locavore everyday carry plaid chartreuse. Ethical offal etsy gluten-free portland bicycle rights. Prism man bun food truck slow-carb paleo. Deep v meggings chambray tattooed schlitz gochujang.</p>-->
             <div class="row">
-                <div class="large-8 columns">
-                    <a href="../_img/_portfolio/gopro/Cameras.png">
-                        <img class="inline-img" src="../_img/_portfolio/gopro/video-features.png">
-                    </a>
-                </div>
-                <div class="large-4 columns">
-                    <blockquote>Video-muligheter</blockquote>
-                </div>
-            </div>
-            <p>Skateboard stumptown hot chicken, banh mi blog kogi asymmetrical locavore everyday carry plaid chartreuse. Ethical offal etsy gluten-free portland bicycle rights. Prism man bun food truck slow-carb paleo. Deep v meggings chambray tattooed schlitz gochujang.</p>
-            <div class="row">
-                <div class="large-8 columns">
+                <div class="columns">
                     <a href="../_img/_portfolio/gopro/Cameras.png">
                         <img class="inline-img" src="../_img/_portfolio/gopro/fov.png">
                     </a>
                 </div>
-                <div class="large-4 columns">
-                    <blockquote>Field of view.</blockquote>
+            </div>
+            <p>De ulike modellenes F.O.V (Field of View) var oppført i grader. De modellene som hadde flere enn en mulig F.O.V hadde alle gradene listet opp etter hverandre. Noe som igjen krever at brukeren må huske, manipulere og visualisere infomasjonen på egenhånd. Det kan også være en utfordring for de som ikke er så bevandret i bruken av matematiske grader. I en perfekt verden burde alle kunne orientere seg ved hjelp av sirkelens 360 grader, men jeg vet av erfaring at slik ikke er tilfellet. Så det smarteste trekket er å vise brukeren hva tallene egentlig viser.</p>
+            
+            <p>Etter min mening så skal ikke brukeren tvinges til å måtte memorisere informasjonen på en sammenlignings-side. Den burde presenteres på en måte som minimerer den kognitive belastning, og som gjør at brukeren ved et øyekast kan finne ut hvilke produkt som passer best.</p>
+            <h2>F.P.S (Frames Per Second)</h2>
+            <div class="row">
+                <div class="columns">
+                    <a href="../_img/_portfolio/gopro/Cameras.png">
+                        <img class="inline-img" src="../_img/_portfolio/gopro/video-features.png">
+                    </a>
                 </div>
             </div>
-            <p>Drinking vinegar scenester unicorn lumbersexual hammock green juice +1, whatever pinterest activated charcoal. Live-edge woke migas put a bird on it, bitters polaroid mustache. Cred irony actually, flexitarian gentrify DIY sriracha tumeric unicorn food truck gluten-free freegan mustache.</p>
+            <p>Alle GoPro-kamera kan ta opp film i flere oppløsninger (opp til 4K) og med mulighet for å stille inn hvor mange bilder som skal bli tatt hvert sekund.</p>
+            <p>Dagens løsning lister opp alle de mulige FPS-verdier i hver av de potensielle oppløsningene som kameraene kan fange video i. Noe som gjør en rask sammenligning nesten umulig.</p>
+            <p>Jeg satt informasjonen opp slik at for hver tilgjengelige oppløsning (fra 4K ned til x) er alle de mulige FPS-verdier listet opp på venstre side. Deretter indikerte jeg om de FPS-verdiene var støttet av kameraet ved å plassere en farget sirkel i FPS-verdiens rad og kameramodellens kolonne. De verdiene som ikke var støttet fikk en sirkel med kantlinje og uten fargefyll.</p>
+            <p>Nå er det relativt enkelt å se at den eneste modellen som støtter 4K-filming ved 30 FPS er modellen lengst til venstre.</p>
+            <h2>Avanserte funksjoner</h2>
             <div class="row">
-                <div class="large-8 columns">
-                    <a href="../_img/_portfolio/gopro/Cameras.png">
+                <div class="columns">
+                    <a href="../_img/_portfolio/gopro/advanced-features-wireless.png">
                         <img class="inline-img" src="../_img/_portfolio/gopro/advanced-features-wireless.png">
                     </a>
                 </div>
-                <div class="large-4 columns">
-                    <blockquote>Avanserte .</blockquote>
-                </div>
             </div>
-            <p>Vinyl gluten-free intelligentsia, raclette single-origin coffee drinking vinegar cred hexagon williamsburg YOLO four dollar toast +1 viral farm-to-table. 3 wolf moon tumblr thundercats actually gluten-free.</p>
+            <p>I steden for å skrive hvilke teknologier som støttes av modellene, vis det. Mangelen på logo viser mangelen på teknologien.</p>
+            <h2>Overførings-hastighet</h2>
             <div class="row">
-                <div class="large-8 columns">
-                    <a href="../_img/_portfolio/gopro/Cameras.png">
+                <div class="columns">
+                    <a href="../_img/_portfolio/gopro/advanced-features-bitrate.png">
                         <img class="inline-img" src="../_img/_portfolio/gopro/advanced-features-bitrate.png">
                     </a>
                 </div>
-                <div class="large-4 columns">
-                    <blockquote>Her er bekreftelsessiden som jeg tok utgangspunkt i. Alt innholdet skal bevares på en eller annen måte.</blockquote>
-                </div>
             </div>
-            <p>Hell of pok pok ethical kale chips asymmetrical, irony brunch cray four loko brooklyn biodiesel pork belly. Edison bulb bespoke brooklyn put a bird on it austin. IPhone XOXO pabst, vinyl irony humblebrag cornhole flannel occupy hammock 3 wolf moon tofu tbh. Tote bag distillery glossier, ethical ennui tacos food truck bitters selvage typewriter hell of salvia green juice keytar art party. Helvetica health goth cardigan brunch banh mi.</p>
+            <p>Ved å tegne opp en graf for de ulike hastighetene kan hvem som helst se at modellen lengst til venstre er 3 - 4 ganger raskere enn modellen helt til høyre. </p>
+            <h2>Foto-funksjoner</h2>
             <div class="row">
-                <div class="large-8 columns">
-                    <a href="../_img/_portfolio/gopro/Cameras.png">
+                <div class="columns">
+                    <a href="../_img/_portfolio/gopro/burst-rates.png">
                         <img class="inline-img" src="../_img/_portfolio/gopro/burst-rates.png">
                     </a>
                 </div>
-                <div class="large-4 columns">
-                    <blockquote>Her er.</blockquote>
-                </div>
             </div>
-            <p>Austin roof party kinfolk chambray enamel pin microdosing. Intelligentsia pug thundercats freegan microdosing selfies organic cronut YOLO, keytar pour-over iceland. Before they sold out master cleanse trust fund cardigan organic meditation, four loko fam ennui craft beer stumptown la croix disrupt. Gluten-free farm-to-table vegan, gastropub yuccie pork belly jean shorts activated charcoal ethical enamel pin kinfolk coloring book blue bottle health goth scenester. </p>
+            <p>Etter samme lest som FPS-oversikten satt jeg opp alle mulige verdier av bilder/sekund, og lot sirkelene indikere hvorvidt modellen støttet det gitte antall bilder per sekund.</p>
+            <h2>Megapiksler</h2>
             <div class="row">
-                <div class="large-8 columns">
+                <div class="columns">
                     <a href="../_img/_portfolio/gopro/Cameras.png">
                         <img class="inline-img" src="../_img/_portfolio/gopro/megapixles.png">
                     </a>
-                </div>
-                <div class="large-4 columns">
-                    <blockquote>Her er bekreftelsessiden .</blockquote>
                 </div>
             </div>
             <p>Flexitarian chicharrones beard, tumeric cronut typewriter YOLO williamsburg hammock irony ugh blue bottle portland. Freegan swag waistcoat, street art affogato you probably haven't heard of them scenester retro shoreditch bushwick schlitz twee prism microdosing. Offal succulents ethical irony.</p>
             <h2>Resultatet</h2>
             <p>Og her har du resultatet av redesignet.</p>
             <div class="row">
-                <a class="columns" href="../_img/_portfolio/gopro/camera-comparison-full.png"><img  src="../_img/_portfolio/gopro/camera-comparison-full.png"></a>
+                <a class="columns" href="../_img/_portfolio/gopro/camera-comparison-full.png"><img src="../_img/_portfolio/gopro/camera-comparison-full.png"></a>
 
             </div>
         </div>
