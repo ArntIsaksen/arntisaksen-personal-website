@@ -49,18 +49,6 @@ a:hover {
   color: #ffffff; }
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+30,cfd8dc+100,cfd8dc+101 */
-#intro {
-  /* Old browsers */
-  background: #ffffff;
-  /* FF3.6-15 */
-  background: -moz-linear-gradient(left, #ffffff 30%, #cfd8dc 100%, #cfd8dc 101%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-linear-gradient(left, #ffffff 30%, #cfd8dc 100%, #cfd8dc 101%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  background: linear-gradient(to right, #ffffff 30%, #cfd8dc 100%, #cfd8dc 101%);
-  /* IE6-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cfd8dc',GradientType=1 ); }
-
 #introduction-text {
   margin-top: 2.5em; }
 
