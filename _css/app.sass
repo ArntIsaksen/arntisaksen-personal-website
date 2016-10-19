@@ -4,23 +4,24 @@ $font-base-size: 1em
 
 /*Colour*/
 $background-color: #ffffff
-/*$primary-color: #444444*/
 
-$primary-color-dark:   #455A64
-$primary-color:        #607D8B
-$primary-color-light:  #CFD8DC
-$primary-color-text:   #FFFFFF
-$accent-color:         #FFC107
-$primary-text-color:   #212121
-$secondary-text-color: #757575
-$divider-color:        #BDBDBD
+$primary-color-dark:            #AE9E8B
+$primary-color:                 #2E2F30
+$primary-color-light:           #DCDCDD
+
+$primary-text-color-light:      #FFFFFF
+$primary-text-color-dark:       #212121
+$secondary-text-color:          #757575
+
+$accent-color:                  #FFC107
+$divider-color:                 #BDBDBD
 
 /*Space*/
 $padding: 0.5em
 
 body, h1, h2, h3, h4, h5, h6
     font-family: $font-stack
-    color: $primary-text-color
+    color: $primary-text-color-dark
     
 h1
     margin-top: $padding
@@ -40,21 +41,24 @@ a
     color: $primary-color
 
 a:hover
-    color: $primary-color-light
+    color: $primary-color-dark
 
 .button
-    color: $primary-color-text
-    background-color: $primary-color
+    color: $primary-text-color-light
+    background-color: $primary-color-light
 
 .button h4
-    color: $primary-color-text
+    color: $primary-text-color-dark
 
 .button:hover, .button:focus
-    background-color: $primary-color-light
-    color: $primary-text-color
+    background-color: $primary-color-dark
+    color: $primary-text-color-dark
 
 .button:hover h4
-    color: $primary-text-color
+    color: $primary-text-color-light
+
+.button:hover h5
+    color: $primary-text-color-light
 
 .button.primary
     background-color: $primary-color
@@ -121,9 +125,16 @@ section:first-of-type
     transform: translateY(50%)
     border: 1px solid black*/
 
+.button-group
+    margin-bottom: 0
+
+#companies
+    margin-top: 0
+    background: $primary-color-light
+
 .card
     border-radius: 2px
-    margin: 1em 0
+    margin: 2em 0
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
     transition: all 0.3s cubic-bezier(.25,.8,.25,1)
 
@@ -131,12 +142,16 @@ section:first-of-type
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
 
 .card > h3
-    background-color: $primary-color
+    background-color: $primary-color-dark
     padding: $padding
-    color: $primary-color-text
+    color: $primary-text-color-light
+
+footer
+    background: $primary-color-light
+    padding: 2rem 0 0 0
 
 /*  MORPH
-	from: http://designshack.net/articles/css/joshuajohnson-2/ */
+    from: http://designshack.net/articles/css/joshuajohnson-2/ */
 .morph
     -webkit-transition: all 0.5s ease
     -moz-transition: all 0.5s ease
