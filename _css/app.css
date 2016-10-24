@@ -104,6 +104,9 @@ section:first-of-type {
 .button-group {
   margin-bottom: 0; }
 
+.add-divider {
+  border-left: 1px solid #DCDCDD; }
+
 #companies {
   margin-top: 0;
   background: #DCDCDD; }
