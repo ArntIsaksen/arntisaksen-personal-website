@@ -32,6 +32,9 @@ a:hover {
 .button h4 {
   color: #212121; }
 
+.button p {
+  color: #212121; }
+
 .button:hover, .button:focus {
   background-color: #AE9E8B;
   color: #212121; }
@@ -51,6 +54,9 @@ a:hover {
   color: #ffffff; }
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+30,cfd8dc+100,cfd8dc+101 */
+#blogg-button {
+  color: #2E2F30; }
+
 #introduction-text {
   margin-top: 2.5em; }
 
@@ -90,11 +96,11 @@ section:first-of-type {
   -o-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-  -webkit-transform: translateX(-20%);
-  -moz-transform: translateX(-20%);
-  -o-transform: translateX(-20%);
-  -ms-transform: translateX(-20%);
-  transform: translateX(-20%); }
+  -webkit-transform: translateX(-5%);
+  -moz-transform: translateX(-5%);
+  -o-transform: translateX(-5%);
+  -ms-transform: translateX(-5%);
+  transform: translateX(-5%); }
 
 /*.center-align
  * position: relative
@@ -106,6 +112,13 @@ section:first-of-type {
 
 .add-divider {
   border-left: 1px solid #DCDCDD; }
+
+a h5 {
+  margin-bottom: 0; }
+
+#mobile-icon {
+  height: auto;
+  width: 60%; }
 
 #companies {
   margin-top: 0;
@@ -145,6 +158,9 @@ footer {
   -o-transform: scale(1.1, 1.1);
   -ms-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1); }
+
+blockquote a:hover {
+  text-decoration: underline; }
 
 /*Portfolio */
 article h1 {
