@@ -50,6 +50,9 @@ a:hover
 .button h4
     color: $primary-text-color-dark
 
+.button p
+    color: $primary-text-color-dark
+
 .button:hover, .button:focus
     background-color: $primary-color-dark
     color: $primary-text-color-dark
@@ -69,8 +72,9 @@ a:hover
     color: $background-color
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+30,cfd8dc+100,cfd8dc+101 */
-#intro
 
+#blogg-button
+    color: $primary-color
 
 #introduction-text
     margin-top: $padding * 5
@@ -113,11 +117,11 @@ section:first-of-type
     -ms-transform: scale(1.1)
     transform: scale(1.1)
 
-    -webkit-transform: translateX(-20%)
-    -moz-transform: translateX(-20%)
-    -o-transform: translateX(-20%)
-    -ms-transform: translateX(-20%)
-    transform: translateX(-20%)
+    -webkit-transform: translateX(-5%)
+    -moz-transform: translateX(-5%)
+    -o-transform: translateX(-5%)
+    -ms-transform: translateX(-5%)
+    transform: translateX(-5%)
 
 /*.center-align
     position: relative
@@ -126,6 +130,12 @@ section:first-of-type
     border: 1px solid black*/
 
 .button-group
+    margin-bottom: 0
+
+.add-divider
+    border-left: 1px solid $primary-color-light
+
+a h5
     margin-bottom: 0
 
 #companies
@@ -148,6 +158,7 @@ section:first-of-type
 
 footer
     background: $primary-color-light
+    margin-top: $padding * 10
     padding: 2rem 0 0 0
 
 /*  MORPH
@@ -167,6 +178,9 @@ footer
     -ms-transform: scale(1.10, 1.10)
     transform: scale(1.10, 1.10)
 
+blockquote a:hover
+    text-decoration: underline
+
 /*Portfolio*/
 
 article h1
@@ -183,9 +197,13 @@ article h3
     padding-bottom: $padding
 
 .inline-img
-    padding-top: $padding * 10
-    padding-bottom: $padding * 10
-    
+    padding-top: $padding * 5
+    padding-bottom: $padding * 5
+
+.inline-img-medium
+    width: 50%
+    display: block
+    margin: 0 auto
 
 .portfolio-header
     background: $primary-color
