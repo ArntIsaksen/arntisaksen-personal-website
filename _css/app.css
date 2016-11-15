@@ -116,10 +116,6 @@ section:first-of-type {
 a h5 {
   margin-bottom: 0; }
 
-#mobile-icon {
-  height: auto;
-  width: 60%; }
-
 #companies {
   margin-top: 0;
   background: #DCDCDD; }
@@ -140,6 +136,7 @@ a h5 {
 
 footer {
   background: #DCDCDD;
+  margin-top: 5em;
   padding: 2rem 0 0 0; }
 
 /*  MORPH
@@ -177,8 +174,13 @@ article h3 {
   padding-bottom: 0.5em; }
 
 .inline-img {
-  padding-top: 5em;
-  padding-bottom: 5em; }
+  padding-top: 2.5em;
+  padding-bottom: 2.5em; }
+
+.inline-img-medium {
+  width: 50%;
+  display: block;
+  margin: 0 auto; }
 
 .portfolio-header {
   background: #2E2F30; }
