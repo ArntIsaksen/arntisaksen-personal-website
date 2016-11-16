@@ -129,7 +129,7 @@ a h5 {
 .card:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
-.card > h3 {
+.card > a > h3 {
   background-color: #AE9E8B;
   padding: 0.5em;
   color: #FFFFFF; }
