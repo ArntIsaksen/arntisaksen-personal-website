@@ -5,6 +5,7 @@ function preload() {
 }
 
 function setup() {
+	noCanvas();
 	var randomNr = floor(random(10));
 	var ruleText = principles[randomNr].rule;
 	var descriptionText = principles[randomNr].description;
