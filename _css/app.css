@@ -28,7 +28,7 @@ a:hover {
 
 .button {
   color: #FFFFFF;
-  background-color: #2f3131; }
+  background-color: #426e86; }
   .button h4 {
     color: #FFFFFF; }
   .button h5 {
@@ -37,7 +37,7 @@ a:hover {
     color: #FFFFFF; }
 
 .button:hover, .button:focus {
-  background-color: #f8f1e5;
+  background-color: #f9ba32;
   color: #212121; }
 
 .button:hover h4 {
@@ -63,18 +63,25 @@ a:hover {
 
 #introduction-text {
   margin-top: 2.5em; }
+  #introduction-text strong {
+    color: #426e86; }
+  #introduction-text i {
+    color: #f9ba32; }
 
 #small-screen-intro {
   background: #ffffff;
   padding-top: 2.5em; }
+  #small-screen-intro strong {
+    color: #426e86; }
+  #small-screen-intro i {
+    color: #f9ba32; }
 
 #intro-text {
   top: 50%; }
 
 .img_icon {
   width: 5em;
-  margin: 1em;
-  padding: 2.5em 0; }
+  margin: 2.5em 0; }
 
 .no-background {
   background-color: #ffffff; }
@@ -143,6 +150,12 @@ footer {
   background: #2f3131;
   margin-top: 5em;
   padding: 2rem 0 0 0; }
+  footer a {
+    color: #f9ba32; }
+  footer a:hover {
+    color: #f8f1e5; }
+  footer .button {
+    background-color: #2f3131; }
 
 #copyright-row {
   padding-top: 2.5em;

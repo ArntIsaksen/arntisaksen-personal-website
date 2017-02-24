@@ -51,7 +51,7 @@ a:hover
 
 .button
     color: $primary-text-color-light
-    background-color: $primary-color-dark
+    background-color: $primary-color
     h4
         color: $primary-text-color-light
     h5
@@ -60,7 +60,7 @@ a:hover
         color: $primary-text-color-light
 
 .button:hover, .button:focus
-    background-color: $primary-color-light
+    background-color: $accent-color
     color: $primary-text-color-dark
 
 .button:hover 
@@ -88,18 +88,25 @@ a:hover
 
 #introduction-text
     margin-top: $padding * 5
+    strong
+        color: $primary-color
+    i
+        color: $accent-color
 
 #small-screen-intro
     background: $background-color
     padding-top: $padding * 5
+    strong
+        color: $primary-color
+    i
+        color: $accent-color
     
 #intro-text
     top: 50%
 
 .img_icon
     width: 5em
-    margin: 1em
-    padding: $padding * 5 0
+    margin: $padding * 5 0
 
 .no-background
     background-color: $background-color
@@ -169,6 +176,12 @@ footer
     background: $primary-color-dark
     margin-top: $padding * 10
     padding: 2rem 0 0 0
+    a
+        color: $accent-color
+    a:hover
+        color: $primary-color-light
+    .button
+        background-color: $primary-color-dark
 
 #copyright-row
     padding-top: $padding * 5
