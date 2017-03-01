@@ -145,6 +145,9 @@ a h5 {
 
 .card:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .card:hover h3 {
+    background: #f9ba32;
+    color: #2f3131; }
 
 footer {
   background: #2f3131;
