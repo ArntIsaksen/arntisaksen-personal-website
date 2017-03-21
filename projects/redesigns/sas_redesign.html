@@ -6,19 +6,25 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>arntisaksen.com | portfolio - SAS</title>
-    <link rel="stylesheet" href="../_css/foundation.css">
-    <link rel="stylesheet" href="../_css/app.css">
+    <link rel="stylesheet" href="/_css/foundation.css">
+    <link rel="stylesheet" href="/_css/app.css">
     <!--<link rel="stylesheet" href="_css/style.css">-->
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700italic,900,300' rel='stylesheet' type='text/css'>
     <!-- Google Analytics -->
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-16219261-1', 'auto');
-      ga('send', 'pageview');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o)
+                , m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-16219261-1', 'auto');
+        ga('send', 'pageview');
     </script>
     <!-- End Google Analytics -->
 </head>
@@ -32,19 +38,20 @@
         <div class="top-bar" id="example-menu">
             <div class="top-bar-right">
                 <ul class=" medium-horizontal vertical menu" data-responsive-menu="accordion medium-dropdown">
-                    <li> <a href="#">Kontakt</a></li>
-                    <li><a href="#">CV</a></li>
-                    <li><a href="#">Portefølje</a></li>
+                    <li><a href="http://arntisaksen.com">Home</a></li>
+                    <li><a href="http://arntisaksen.com/cv.html">CV</a></li>
+                    <li><a href="http://projects.arntisaksen.com">Projects</a></li>
+                    <li><a id="blogg-button" target="_blank" href="http://blog.arntisaksen.com" class="button">Blog</a></li>
                 </ul>
             </div>
             <div class="top-bar-left">
                 <ul class=" medium-horizontal vertical menu" data-responsive-menu="accordion medium-dropdown">
-                    <li> <a href="javascript:history.back()">&lt; Tilbake</a></li>
+                    <li> <a href="javascript:history.back()">&lt; Back</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="portfolio-header text-center"> <img class="expanded" src="../_img/_portfolio/sas/reise.png"> </div>
+    <div class="portfolio-header text-center"> <img class="expanded" src="/_img/_portfolio/sas/reise.png"> </div>
     <article class="row columns">
         <div class="medium-10 medium-offset-1 columns">
             <h1>Redesign: SASs billett-bekreftelse</h1>
@@ -53,15 +60,11 @@
             <p>Vi har både SAS og Norwegian-fly som kan transportere meg hjem til høytidene. Men jeg tar hovedsaklig SAS. Og det gjør jeg fordi jeg er veldig fornøyd med tjenesten som de leverer. Med unntak av en ting. Bekreftelsessiden for billett-bestillinger på sas.no. Den er, i motsetning til resten av SAS-sidene, rotete, vanskelig å finne informasjon på, og krever (etter min mening) for mye både av nye og returnerende brukere.</p>
             <div class="row">
                 <div class="columns">
-                    <a href="../_img/_portfolio/sas/sas_gammel_side.png">
-                        <img class="inline-img" src="../_img/_portfolio/sas/sas_gammel_side.png">
-                    </a>
+                    <a href="/_img/_portfolio/sas/sas_gammel_side.png"> <img class="inline-img" src="/_img/_portfolio/sas/sas_gammel_side.png"> </a>
                     <blockquote>Her er bekreftelsessiden som jeg tok utgangspunkt i.</blockquote>
                 </div>
             </div>
-            
             <p>Så, siden jeg hadde noen timer til overs på jobb for et par uker siden bestemte jeg meg for å bruke noen av dem til å forbedre brukervennligheten til siden. Med utgangspunkt i hvordan den så ut da jeg bestilte billett hjem fra juleferien i år. <i>(Se skjermbilde ovenfor)</i></p>
-            
             <h2>Prosessen</h2>
             <p>Jeg satte noen begrensninger for prosjektet. I utgangspunktet ønsket jeg ikke å legge til nye elementer, men heller prøve å omstrukturere den informasjonen som allerede eksisterer på siden. Jeg ønsket også tydeliggjøre hva som er informasjon til brukeren, og hva som er handlinger som kan utføres av brukeren.</p>
             <p>Bare så det er sagt så er jeg ikke grafisk designer. Mitt problem med siden er ikke at den er uattraktiv, men at det er vanskelig å raskt finne den informasjonen du ønsker å finne. Så alle farger, skrifttyper, og andre grafiske elementer som jeg har brukt i redesignet har jeg lånt (eller hentet) fra andre steder på sas.no</p>
@@ -98,27 +101,27 @@
             </div>
             <p>Deretter så jeg om jeg kunne gruppere komponentene i logiske bolker. Før jeg gikk i gang med wireframing og selve designet. De hovedkategoriene som jeg landet på var <i>Betaling</i>, <i>Reisende</i> og <i>Reisen</i>. Ved hjelp av disse gruppene fikk alle elementene (etter min mening) en fornuftig plassering.</p>
             <p>Men la oss ta dette fra toppen av, og begynne med de øverste elementene på den nye siden.</p>
-            <h2>Endring og kansellering</h2> <img class="inline-img inline-img-medium" src="../_img/_portfolio/sas/avbestill_reise.png">
+            <h2>Endring og kansellering</h2> <img class="inline-img inline-img-medium" src="/_img/_portfolio/sas/avbestill_reise.png">
             <p>Det som tidligere var to uanselige linker helt nede i venstre hjørne valgte jeg å flytte helt til toppen, og gi veldig tydelige og distingte knapper. Når du først har oppdaget at du har kjøpt billetter til feil avreisetidspunkt (eller til feil by, som jeg har gjort ved et par anledninger) så er det trygt å vite at du har en kanselerings-knapp lett tilgjengelig.</p>
             <p>Slik kan du avverge en potensielt stressende situasjon, og redusere behovet for å ta en telefon til brukerstøtte. Når SAS i tillegg har 24 timers åpent kjøp på billettene sine, så burde en tydeligere knapp ikke føre med seg så mange problemer.</p>
-            <h2 class="show-for-medium">Bestillingsreferanse</h2><h2 class="show-for-small-only">Bestillings-referanse</h2> <img class="inline-img" src="../_img/_portfolio/sas/bestillingsreferanse.png">
+            <h2 class="show-for-medium">Bestillingsreferanse</h2>
+            <h2 class="show-for-small-only">Bestillings-referanse</h2> <img class="inline-img" src="/_img/_portfolio/sas/bestillingsreferanse.png">
             <p>Noe av det jeg har sett at flest personer har problemer med er å finne (og lese av) er bestillingsreferansen for reisen sin. Den står øverst på siden nå, med en stor og tydelig skrifttype. Sammen med strekkoden, dersom brukeren skulle ønske å bruke den.</p>
             <p>Tanken bak det grafiske skille mellom tall og bokstaver har jeg fått fra en av passordtjenestene jeg har benyttet meg av. Idéen er at du aldri skal ha behov for å vurdere om det er et ett-tall eller en “l”, eller om det er null eller en “O”.</p>
             <p>Har den en farge så er det et nummer. Er den svart, en bokstav.</p>
             <p>Jeg valgte å legge inn strekkoden to ganger, en på høyre og en på venstre, slik at brukeren raskt kunne skanne koden uten å måtte snu arket rundt fordi de tilfeldigvis stod feil vei i forhold til innsjekkingsautomaten.</p>
-            <h2>Knapper</h2> <img class="inline-img" src="../_img/_portfolio/sas/knapperad.png">
+            <h2>Knapper</h2> <img class="inline-img" src="/_img/_portfolio/sas/knapperad.png">
             <p>De tre handlingene som tidligere lå bortgjemt i en klynge av linker, nede i høyre hjørne, har fått hver sin knapp og er plassert på en egen rad.</p>
-            <h2>Betaling</h2> <img class="inline-img inline-img-medium" src="../_img/_portfolio/sas/betaling.png">
+            <h2>Betaling</h2> <img class="inline-img inline-img-medium" src="/_img/_portfolio/sas/betaling.png">
             <p>Fremstillingen av kostandene for turen var i utgangspunktet god. Det eneste jeg har endret på er at alle prisene er høyre-justert, slik at regnestykket blir enklere å lese. Og at jeg har gjort en litt mindre drastisk utheving av totalsummen.</p>
             <p>Hvilket kort som ble brukt for å betale kostnadene for reisen fant jeg naturlig å legge til her.</p>
-            <h2>Den reisende</h2> <img class="inline-img inline-img-medium" src="../_img/_portfolio/sas/reisende.png">
+            <h2>Den reisende</h2> <img class="inline-img inline-img-medium" src="/_img/_portfolio/sas/reisende.png">
             <p><strong>Bekreftelse sendt</strong> til ble endret til <strong>E-post</strong>, da det for det første følger samme merkelapps-bruk som de andre verdiene i denne bolken. <strong>Navn</strong> inneholder navnet, <strong>Mobil</strong> inneholder mobilnummeret o.s.v. For det andre begynner det å bli en ganske standard prosedyre at bekreftelsen sendes til den e-postadressen som du har spesifisert. Jeg la i stedet til en knapp hvor du kan re-sende bekreftelsen hvis den ikke har ankommet.</p>
             <p>Jeg endret <strong>Telefon</strong> til <strong>Mobil</strong> fordi jeg følte at det var mer presist, og fordi det er dette nummeret du får innsjekk- og avviks-meldinger til. Noe som forutsetter bruk av en mobiltelefon.</p>
             <p>Et eventuelt bonusprogram er også knyttet til individer som gjennomfører reisen, og ble av den grunn lagt til i denne bolken. Jeg flyttet også linken til Hvor mange Eurobonuspoeng tjener jeg? fra det nedre venstre hjørnet (rett under Se alle skatter, avgifter og tillegg) til under merkelappen Bonusprogram.</p>
             <p>Man kan kanskje argumentere for at en avbestillingsforsikring har mest med selve reisen å gjøre. Men for meg så er forsikringen sterkere knyttet til personen enn den er til reisen. Det står en del om forsikringen på dagens bekreftelsesside som jeg har fjernet. Noe av dette er informasjons om du burde fått i forkant av kjøpet, og det resterende er ting du bare trenger i tilfelle du har noen spørsmål rundt forsikringen. Jeg har lagt alt slikt under en Les mer link, men det kan nok (og burde kanskje) løses på en bedre måte.</p>
-            <h2>Reise</h2> 
-            <p>Noe av det jeg personlig har hatt problemer med er å sjekke tidspunkt og rute for flyvningen min. Jeg forsøkte derfor å sette opp tydelige avgang- og ankomst-grupperinger.</p>
-            <img class="inline-img" src="../_img/_portfolio/sas/reise.png">
+            <h2>Reise</h2>
+            <p>Noe av det jeg personlig har hatt problemer med er å sjekke tidspunkt og rute for flyvningen min. Jeg forsøkte derfor å sette opp tydelige avgang- og ankomst-grupperinger.</p> <img class="inline-img" src="/_img/_portfolio/sas/reise.png">
             <p>Jeg valgte også å bruke en større illlustrasjon av flykroppen. Det er to grunner til det. For det første for å tydeliggjøre et element som allerede er på siden, men også for å indikere reisens retning (med hjelpsommme retningspiler). Det åpner også opp muligheter for å eventuelt vise hvilket sete brukeren har valgt å forhåndsbestille. Eller å tydeligere vise forskjellene på ulike billett-typene, noe som blir gjort i dag men som jeg tror de fleste ikke er klar over. Faktisk var det nesten ingen av de jeg viste mitt forslag til som visste at det befant seg en fly-illustrasjon (med billett-informasjon) på den siden som brukes i dag.</p>
             <p>Informasjonen om eventuelle elektroniske billetter er etter min mening noe som er tilknyttet avreise og har derfor blitt plassert her. Jeg vurderte en stund å legge det sammen med informasjonen om den som reiser. Men jeg kom frem til at bruken av billetten, i hvertfall for meg, er sterkt knyttet sammen med den avgangen som jeg skal bruke den på.</p>
             <p>Under ankomst-seksjonen har jeg valgt å legge inn noe av de mulighetene som er å finne i annonsene på høyre side av skjermen. Nå kan det virke som om man blander sammen to ting her. Bekreftelsen og reklame.</p>
@@ -128,14 +131,7 @@
             <p>Muligheten for å reservere et sete i forkant, eller kjøpe plass til ekstra innsjekket bagasje er tilknyttet hele reisen og ble derfor plassert midt mellom avgang og ankomst.</p>
             <h2>Resultatet</h2>
             <p>Og her har du resultatet av redesignet.</p>
-            <div class="row">
-            <a class="medium-4 columns morph" href="../_img/_portfolio/sas/sas_bestillingsreferanse_enveisbillett.png"><h3 class="subheader text-center">Enkeltbillett</h3><img src="../_img/_portfolio/sas/sas_bestillingsreferanse_enveisbillett.png"></a>
-                
-            <a class="medium-4 columns morph" href="../_img/_portfolio/sas/sas_bestillingsreferanse_tur_retur.png"><h3 class="subheader text-center">Tur-retur</h3><img  src="../_img/_portfolio/sas/sas_bestillingsreferanse_tur_retur.png"></a>
-                
-            <a class="medium-4 columns morph" href="../_img/_portfolio/sas/sas_bestillingsreferanse_transit.png"><h3 class="subheader text-center">Transit</h3><img  src="../_img/_portfolio/sas/sas_bestillingsreferanse_transit.png"></a>
-                
-            </div>
+            <div class="row"> <a class="medium-4 columns morph" href="/_img/_portfolio/sas/sas_bestillingsreferanse_enveisbillett.png"><h3 class="subheader text-center">Enkeltbillett</h3><img src="/_img/_portfolio/sas/sas_bestillingsreferanse_enveisbillett.png"></a> <a class="medium-4 columns morph" href="/_img/_portfolio/sas/sas_bestillingsreferanse_tur_retur.png"><h3 class="subheader text-center">Tur-retur</h3><img  src="/_img/_portfolio/sas/sas_bestillingsreferanse_tur_retur.png"></a> <a class="medium-4 columns morph" href="/_img/_portfolio/sas/sas_bestillingsreferanse_transit.png"><h3 class="subheader text-center">Transit</h3><img  src="/_img/_portfolio/sas/sas_bestillingsreferanse_transit.png"></a> </div>
             <p>Jeg lagde også noen forslag på reiser med mellomlandinger og flybytte, og tur-retur-reiser.</p>
             <h3>Transit</h3>
             <p>Jeg har lagt inn en glidene (grafisk) overgang mellom hver del av reisen. Som blant annet inneholder informasjon om hvor langt tid det er mellom flyvningene. Og litt i samme tankegang som bestilling av transport-muligheter har jeg lagt inn muligheten for å bestille et hotell.</p>
@@ -145,47 +141,37 @@
     </article>
     <footer>
         <div class="row columns">
-            <div class="row columns">
-                <a class="button small-6 medium-3 columns" href="http://www.facebook.com/arntisaksen"> 
-                    <img class="img_icon" src="../_img/icon_facebook.png" alt="Facebook logo">
-                    
-                </a>
-                <a class="button small-6 medium-3 columns" href="http://www.twitter.com/arntisaksen"> 
-                    <img class="img_icon" src="../_img/icon_twitter.png" alt="Twitter logo">
-                </a>
-                <a class="button small-6 medium-3 columns" href="http://www.instagram.com/arntisaksen"> 
-                    <img class="img_icon" src="../_img/icon_instagram.png" alt="Instagram logo">
-
-                </a>
-                <a class="button small-6 medium-3 columns" href="http://www.flickr.com/arntisaksen"> 
-                    <img class="img_icon" src="../_img/icon_flickr.png" alt="Flickr logo">
-                </a>
-            </div>
             <div class="row">
                 <div class="medium-6 columns">
+                    <div class=" columns">
+                        <a class="button small-6 medium-6 large-3 columns" href="http://www.facebook.com/arntisaksen"> <img class="img_icon" src="/_img/icon_facebook.png" alt="Facebook logo"> </a>
+                        <a class="button small-6 medium-6 large-3 columns" href="http://www.twitter.com/arntisaksen"> <img class="img_icon" src="/_img/icon_twitter.png" alt="Twitter logo"> </a>
+                        <a class="button small-6 medium-6 large-3 columns" href="http://www.instagram.com/arntisaksen"> <img class="img_icon" src="/_img/icon_instagram.png" alt="Instagram logo"> </a>
+                        <a class="button small-6 medium-6 large-3 columns" href="http://www.flickr.com/arntisaksen"> <img class="img_icon" src="/_img/icon_flickr.png" alt="Flickr logo"> </a>
+                    </div>
                 </div>
                 <div class="medium-6 columns">
-                    <blockquote>
-                        <a href="https://www.vitsoe.com/eu/about/good-design"><h3 class="subheader">2. Good design makes a product useful</h3></a>
-                        <p>
-                            A product is bought to be used. It has to satisfy certain criteria, not only functional, but also psychological and aesthetic. Good design emphasises the usefulness of a product whilst disregarding anything that could possibly detract from it.
-                        </p>
-                        <p class="text-right">- Dieter Rams</p>
-                </blockquote>
+                    <blockquote id='principle-quote'>
+                        <a id="rule" href="https://www.vitsoe.com/eu/about/good-design"></a>
+                    </blockquote>
                 </div>
-                
             </div>
-            <div class="row">
-                <p class="text-center">arntisaksen.com &copy;2016</p>
+            <div id="copyright-row" class="row">
+                <div class="text-center">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0</a></div>
+                <p class="text-center">arntisaksen.com &copy;2017</p>
             </div>
-            <section id="bottom-img" class="show-for-small-only row"> 
-                <img src="../_img/arnt_poly_xx_reverse.png" alt="Image of my face"> 
-            </section>
+            <section id="bottom-img" class="show-for-small-only row"> <img src="/_img/arnt_poly_xx_reverse.png" alt="Image of my face"> </section>
         </div>
     </footer>
-    <script src="../_js/vendor/jquery.js"></script>
-    <script src="../_js/vendor/what-input.js"></script>
-    <script src="../_js/vendor/foundation.js"></script>
-    <script src="../_js/app.js"></script>
+    <script language="javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Libraries -->
+    <script language="javascript" type="text/javascript" src="/_js/vendor/p5.js"></script>
+    <script language="javascript" type="text/javascript" src="/_js/vendor/p5.dom.js"></script>
+    <script language="javascript" type="text/javascript" src="/_js/vendor/what-input.js"></script>
+    <script language="javascript" type="text/javascript" src="/_js/vendor/foundation.js"></script>
+    <!--  Javascript -->
+    <script language="javascript" type="text/javascript" src="/_js/app.js"></script>
+    <script language="javascript" type="text/javascript" src="/_js/addPrinciples.js"></script>
 </body>
+
 </html>

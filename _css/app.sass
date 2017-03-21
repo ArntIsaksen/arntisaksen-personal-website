@@ -2,12 +2,11 @@
 $font-stack: Merriweather, serif
 $font-base-size: 1em
 
+/*Colour*/
 // f9ba32 sunshine
 // 426e86 steel blue
 // f8f1e5 bone
 // 2f3131 coal
-
-/*Colour*/
 $background-color: #ffffff
 
 $primary-color-dark:            #2f3131
@@ -44,47 +43,38 @@ h4
 
 a
     color: $primary-color
-
-a:hover
-    color: $primary-text-color-dark
-    text-decoration: underline
+    h5
+        margin-bottom: 0
+    &:hover
+        color: $primary-text-color-dark
+        text-decoration: underline
 
 .button
     color: $primary-text-color-light
     background-color: $primary-color
-    h4
+    h4, h5, p
         color: $primary-text-color-light
-    h5
-        color: $primary-text-color-light
-    p
-        color: $primary-text-color-light
-
-.button:hover, .button:focus
-    background-color: $accent-color
-    color: $primary-text-color-dark
-
-.button:hover 
-    h4
+    &:hover, &:focus
+        background-color: $accent-color
         color: $primary-text-color-dark
-    h5
-        color: $primary-text-color-dark
-
-.button.primary
-    background-color: $primary-color
-    color: $background-color
-
-.button.primary:hover, .button.primary:focus
-    background-color: $primary-color-dark
-    color: $background-color
+    &:hover 
+        h4, h5
+            color: $primary-text-color-dark
+    .primary
+        background-color: $primary-color
+        color: $background-color
+        &:hover, &:focus
+            background-color: $primary-color-dark
+            color: $background-color
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+30,cfd8dc+100,cfd8dc+101 */
 
 #blogg-button
     color: $primary-text-color-light
-
-#blogg-button:hover
-    color: $primary-text-color-dark
-    background-color: $accent-color
+    &:hover
+        color: $primary-text-color-dark
+        background-color: $accent-color
+        text-decoration: none
 
 #introduction-text
     margin-top: $padding * 5
@@ -96,6 +86,8 @@ a:hover
 #small-screen-intro
     background: $background-color
     padding-top: $padding * 5
+    padding-left: $padding * 5
+    padding-right: $padding * 5
     strong
         color: $primary-color
     i
@@ -105,17 +97,16 @@ a:hover
     top: 50%
 
 .img_icon
-    width: 5em
-    margin: $padding * 5 0
+    width: 4em
+    margin: $padding * 2 0
 
 .no-background
     background-color: $background-color
     
 section
     margin: 3.5em 0
-
-section:first-of-type
-    margin: 0
+    &:first-of-type
+        margin: 0
 
 .title-bar
     background-color: $primary-color-dark
@@ -128,17 +119,9 @@ section:first-of-type
     > img
         /*max-width: 100%
         width: 100%
-        -webkit-transform: scale(1.1)
-        -moz-transform: scale(1.1)
-        -o-transform: scale(1.1)
-        -ms-transform: scale(1.1)
         transform: scale(1.1)
-
-        -webkit-transform: translateX(-5%)
-        -moz-transform: translateX(-5%)
-        -o-transform: translateX(-5%)
-        -ms-transform: translateX(-5%)
         transform: translateX(-5%)
+        filter: drop-shadow(5px 1px 7px #bbb)
 
 .button-group
     margin-bottom: 0
@@ -146,15 +129,8 @@ section:first-of-type
 .add-divider
     border-left: 1px solid $divider-color
 
-a h5
-    margin-bottom: 0
-
-#contact-block
-    padding-top: $padding * 7
-    
-#companies
-    margin-top: 0
-    background: $primary-color-light
+.contact-block
+    padding-top: $padding * 9
 
 .card
     border-radius: 2px
@@ -168,17 +144,22 @@ a h5
         color: $primary-text-color-light
     a
         text-decoration: none
+    &:hover
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+        h3
+            background: $accent-color
+            color: $primary-color-dark
 
-.card:hover
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
-    h3
-        background: $accent-color
-        color: $primary-color-dark
+#bottom-img
+    margin: $padding * 2
+    filter: drop-shadow(5px 1px 7px #444)
+    transform: translateY(10%)
 
 footer
     background: $primary-color-dark
     margin-top: $padding * 10
     padding: 2rem 0 0 0
+    overflow: hidden
     a
         color: $accent-color
     a:hover
@@ -193,19 +174,10 @@ footer
 /*  MORPH
     from: http://designshack.net/articles/css/joshuajohnson-2/ */
 .morph
-    -webkit-transition: all 0.5s ease
-    -moz-transition: all 0.5s ease
-    -o-transition: all 0.5s ease
-    -ms-transition: all 0.5s ease
     transition: all 0.5s ease
- 
-.morph:hover
-    border-radius: 12%
-    -webkit-transform: scale(1.10, 1.10)
-    -moz-transform: scale(1.10, 1.10)
-    -o-transform: scale(1.10, 1.10)
-    -ms-transform: scale(1.10, 1.10)
-    transform: scale(1.10, 1.10)
+    &:hover
+        border-radius: 12%
+        transform: scale(1.10, 1.10)
 
 blockquote
     p

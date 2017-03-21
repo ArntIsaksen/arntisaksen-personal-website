@@ -21,45 +21,36 @@ h4 {
 
 a {
   color: #426e86; }
-
-a:hover {
-  color: #212121;
-  text-decoration: underline; }
+  a h5 {
+    margin-bottom: 0; }
+  a:hover {
+    color: #212121;
+    text-decoration: underline; }
 
 .button {
   color: #FFFFFF;
   background-color: #426e86; }
-  .button h4 {
+  .button h4, .button h5, .button p {
     color: #FFFFFF; }
-  .button h5 {
-    color: #FFFFFF; }
-  .button p {
-    color: #FFFFFF; }
-
-.button:hover, .button:focus {
-  background-color: #f9ba32;
-  color: #212121; }
-
-.button:hover h4 {
-  color: #212121; }
-.button:hover h5 {
-  color: #212121; }
-
-.button.primary {
-  background-color: #426e86;
-  color: #ffffff; }
-
-.button.primary:hover, .button.primary:focus {
-  background-color: #2f3131;
-  color: #ffffff; }
+  .button:hover, .button:focus {
+    background-color: #f9ba32;
+    color: #212121; }
+  .button:hover h4, .button:hover h5 {
+    color: #212121; }
+  .button .primary {
+    background-color: #426e86;
+    color: #ffffff; }
+    .button .primary:hover, .button .primary:focus {
+      background-color: #2f3131;
+      color: #ffffff; }
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+30,cfd8dc+100,cfd8dc+101 */
 #blogg-button {
   color: #FFFFFF; }
-
-#blogg-button:hover {
-  color: #212121;
-  background-color: #f9ba32; }
+  #blogg-button:hover {
+    color: #212121;
+    background-color: #f9ba32;
+    text-decoration: none; }
 
 #introduction-text {
   margin-top: 2.5em; }
@@ -70,7 +61,9 @@ a:hover {
 
 #small-screen-intro {
   background: #ffffff;
-  padding-top: 2.5em; }
+  padding-top: 2.5em;
+  padding-left: 2.5em;
+  padding-right: 2.5em; }
   #small-screen-intro strong {
     color: #426e86; }
   #small-screen-intro i {
@@ -80,17 +73,16 @@ a:hover {
   top: 50%; }
 
 .img_icon {
-  width: 5em;
-  margin: 2.5em 0; }
+  width: 4em;
+  margin: 1em 0; }
 
 .no-background {
   background-color: #ffffff; }
 
 section {
   margin: 3.5em 0; }
-
-section:first-of-type {
-  margin: 0; }
+  section:first-of-type {
+    margin: 0; }
 
 .title-bar {
   background-color: #2f3131; }
@@ -104,15 +96,11 @@ section:first-of-type {
     /*max-width: 100% */
     width: 100%;
     -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -ms-transform: scale(1.1);
     transform: scale(1.1);
     -webkit-transform: translateX(-5%);
-    -moz-transform: translateX(-5%);
-    -o-transform: translateX(-5%);
-    -ms-transform: translateX(-5%);
-    transform: translateX(-5%); }
+    transform: translateX(-5%);
+    -webkit-filter: drop-shadow(5px 1px 7px #bbb);
+    filter: drop-shadow(5px 1px 7px #bbb); }
 
 .button-group {
   margin-bottom: 0; }
@@ -120,20 +108,14 @@ section:first-of-type {
 .add-divider {
   border-left: 1px solid #BDBDBD; }
 
-a h5 {
-  margin-bottom: 0; }
-
-#contact-block {
-  padding-top: 3.5em; }
-
-#companies {
-  margin-top: 0;
-  background: #f8f1e5; }
+.contact-block {
+  padding-top: 4.5em; }
 
 .card {
   border-radius: 2px;
   margin: 2em 0;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   background-color: #2f3131;
   color: #FFFFFF; }
@@ -142,17 +124,24 @@ a h5 {
     color: #FFFFFF; }
   .card a {
     text-decoration: none; }
+  .card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+    .card:hover h3 {
+      background: #f9ba32;
+      color: #2f3131; }
 
-.card:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
-  .card:hover h3 {
-    background: #f9ba32;
-    color: #2f3131; }
+#bottom-img {
+  margin: 1em;
+  -webkit-filter: drop-shadow(5px 1px 7px #444);
+  filter: drop-shadow(5px 1px 7px #444);
+  -webkit-transform: translateY(10%);
+  transform: translateY(10%); }
 
 footer {
   background: #2f3131;
   margin-top: 5em;
-  padding: 2rem 0 0 0; }
+  padding: 2rem 0 0 0;
+  overflow: hidden; }
   footer a {
     color: #f9ba32; }
   footer a:hover {
@@ -168,18 +157,11 @@ footer {
  * from: http://designshack.net/articles/css/joshuajohnson-2/ */
 .morph {
   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
   transition: all 0.5s ease; }
-
-.morph:hover {
-  border-radius: 12%;
-  -webkit-transform: scale(1.1, 1.1);
-  -moz-transform: scale(1.1, 1.1);
-  -o-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1); }
+  .morph:hover {
+    border-radius: 12%;
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1); }
 
 blockquote p {
   color: #FFFFFF; }
@@ -201,7 +183,8 @@ article h3 {
 
 .inline-img {
   padding-top: 2.5em;
-  padding-bottom: 2.5em; }
+  padding-bottom: 2.5em;
+  margin: 0 auto; }
 
 .inline-img-medium {
   width: 50%;
@@ -216,5 +199,3 @@ article h3 {
 video {
   margin-top: 2em;
   margin-bottom: 2em; }
-
-/*# sourceMappingURL=app.css.map */

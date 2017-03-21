@@ -6,19 +6,24 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>arntisaksen.com | portfolio - GoPro</title>
-    <link rel="stylesheet" href="../_css/foundation.css">
-    <link rel="stylesheet" href="../_css/app.css">
+    <link rel="stylesheet" href="/_css/foundation.css">
+    <link rel="stylesheet" href="/_css/app.css">
     <!--<link rel="stylesheet" href="_css/style.css">-->
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700italic,900,300' rel='stylesheet' type='text/css'>
     <!-- Google Analytics -->
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-16219261-1', 'auto');
-      ga('send', 'pageview');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-16219261-1', 'auto');
+        ga('send', 'pageview');
     </script>
     <!-- End Google Analytics -->
 </head>
@@ -32,9 +37,10 @@
         <div class="top-bar" id="example-menu">
             <div class="top-bar-right">
                 <ul class=" medium-horizontal vertical menu" data-responsive-menu="accordion medium-dropdown">
-                    <li> <a href="#">Kontakt</a></li>
-                    <li><a href="#">CV</a></li>
-                    <li><a href="#">Portefølje</a></li>
+                    <li><a href="http://arntisaksen.com">Home</a></li>
+                    <li><a href="http://arntisaksen.com/cv.html">CV</a></li>
+                    <li><a href="http://www.arntisaksen.com/projects">Projects</a></li>
+                    <li><a id="blogg-button" target="_blank" href="http://blog.arntisaksen.com" class="button">Blog</a></li>
                 </ul>
             </div>
             <div class="top-bar-left">
@@ -44,53 +50,44 @@
             </div>
         </div>
     </nav>
-    <div class="portfolio-header text-center"> <img class="expanded" src="../_img/_portfolio/gopro/fov.png"> </div>
+    <div class="portfolio-header text-center"> <img class="expanded" src="/_img/_portfolio/gopro/fov.png"> </div>
     <article class="row columns">
         <div class="medium-10 medium-offset-1 columns">
             <h1 class="hide-for-small-only">Redesign: GoPros side for sammenligning av kamera</h1>
             <h1 class="show-for-small-only">Redesign: GoPros side for sammen-ligning av kamera</h1>
             <p><i>Dette er et redesign jeg gjorde av den gamle kamerasammenligningssiden til GoPro. Den nye siden har noen forbedringer. Men jeg mener at det fremdeles er noen interessante idéer i mitt forslag som GoPro kunne vurdert å implementere. (November 2016)</i></p>
-            
             <p> Jeg tok en tur innom GoPro sine sider for å undersøke hva forskjellene mellom de ulike kameramodellene var. Det tok ikke så lang tid før jeg oppdaget at det ikke var så enkelt å sammenligne kameraene som jeg trodde det skulle være. Litt overraskende siden jeg tenkte at å raskt kunne sammenligne funksjonene til de ulike modeller var kamerasammenlignerens hovedoppgave. Derfor satt jeg av litt tid til å finne ut hvordan jeg, med få grep, kunne gjøre hele prosessen enklere.</p>
             <h2>Produktnavn og bilde</h2>
             <div class="row">
                 <div class="columns">
-                    <a href="../_img/_portfolio/gopro/Cameras.png">
-                        <img class="inline-img" src="../_img/_portfolio/gopro/Cameras.png">
-                    </a>
+                    <a href="/_img/_portfolio/gopro/Cameras.png"> <img class="inline-img" src="/_img/_portfolio/gopro/Cameras.png"> </a>
                 </div>
             </div>
             <p>Øverst på siden ser vi de ulike kameraene som vi kan sammenligne. Men med en gang du begynner å gå videre nedover siden forsvinner produktnavnene og bildene forbi toppen av nettleser-vinduet. Noe som gjør at du blir nødt til å huske hvilket kamera som tilhører hvilken kolonne. Du husker kanskje hvilket kamera som er lengst til venstre og til høyre, men de i midten kan raskt bli ganske vanskelig å holde styr på. Og du ender opp med å måtte scrolle deg opp og ned på siden for å sjekke hvilke kameramodeller som tilhører de ulike kolonnene.</p>
             <p>Dette kan løses ved å sørge for at navnene og bildene av de ulike kameraene følger med deg etterhvert som du scroller nedover siden. Slik som videoen under viser.</p>
-            <video class="columns" src="../_img/_portfolio/gopro/scroll-animation.m4v" controls preload>
-                <p> Try this page in a modern browser! Or you can <a  href="../_img/_portfolio/gopro/scroll-animation.m4v">download the  video</a> instead.</p>
+            <video class="columns" src="/_img/_portfolio/gopro/scroll-animation.m4v" controls preload>
+                <p> Try this page in a modern browser! Or you can <a href="/_img/_portfolio/gopro/scroll-animation.m4v">download the video</a> instead.</p>
             </video>
             <h2>Grafiske elementer</h2>
             <p>Etter min mening så skal ikke brukeren tvinges til å måtte memorisere informasjonen på en sammenlignings-side. Den burde presenteres på en måte som minimerer den kognitive belastning, og som gjør at brukeren ved et øyekast kan finne ut hvilke produkt som passer best. Derfor har den informasjonen som nå listes opp som et sett med verdier blitt forsøkt visualisert til noe som brukerene lett kan sammenligne.</p>
             <h3>F.O.V (Field of View)</h3>
             <div class="row">
                 <div class="columns">
-                    <a href="../_img/_portfolio/gopro/Cameras.png">
-                        <img class="inline-img" src="../_img/_portfolio/gopro/fov.png">
-                    </a>
+                    <a href="/_img/_portfolio/gopro/Cameras.png"> <img class="inline-img" src="/_img/_portfolio/gopro/fov.png"> </a>
                 </div>
             </div>
             <p>De ulike modellenes F.O.V (Field of View) var oppført i grader. De modellene som hadde flere mulig F.O.V hadde alle gradene listet opp etter hverandre. Når all informasjonen legges ut på den måten krever du at brukeren må huske og visualisere infomasjonen på egenhånd. Det kan også være en utfordring for de som ikke er så stødig i bruken av matematiske grader. I en perfekt verden burde alle kunne orientere seg ved hjelp av sirkelens 360 grader, men jeg vet av erfaring at slik ikke er tilfellet. Så det smarteste trekket er å vise brukeren hva tallene egentlig viser.</p>
             <h3>Avanserte funksjoner</h3>
             <div class="row">
                 <div class="columns">
-                    <a href="../_img/_portfolio/gopro/advanced-features-wireless.png">
-                        <img class="inline-img" src="../_img/_portfolio/gopro/advanced-features-wireless.png">
-                    </a>
+                    <a href="/_img/_portfolio/gopro/advanced-features-wireless.png"> <img class="inline-img" src="/_img/_portfolio/gopro/advanced-features-wireless.png"> </a>
                 </div>
             </div>
             <p>I steden for å skrive hvilke teknologier som støttes av modellene, vis det. De fleste er kjente med ikonene for WiFi og Bluetooth. De ikonene som er synlig er de(n) teknologien(e) som modellen støtter.</p>
             <h3>Overførings-hastighet</h3>
             <div class="row">
                 <div class="columns">
-                    <a href="../_img/_portfolio/gopro/advanced-features-bitrate.png">
-                        <img class="inline-img" src="../_img/_portfolio/gopro/advanced-features-bitrate.png">
-                    </a>
+                    <a href="/_img/_portfolio/gopro/advanced-features-bitrate.png"> <img class="inline-img" src="/_img/_portfolio/gopro/advanced-features-bitrate.png"> </a>
                 </div>
             </div>
             <p>Ved å tegne opp en graf for de ulike hastighetene er det enklere å se at modellen lengst til venstre er 3 - 4 ganger raskere enn modellen helt til høyre. </p>
@@ -99,9 +96,7 @@
             <h3>F.P.S (Frames Per Second)</h3>
             <div class="row">
                 <div class="columns">
-                    <a href="../_img/_portfolio/gopro/Cameras.png">
-                        <img class="inline-img" src="../_img/_portfolio/gopro/video-features.png">
-                    </a>
+                    <a href="/_img/_portfolio/gopro/Cameras.png"> <img class="inline-img" src="/_img/_portfolio/gopro/video-features.png"> </a>
                 </div>
             </div>
             <p>Alle GoPro-kamera kan ta opp film i flere oppløsninger (opp til 4K) og med mulighet for å stille inn hvor mange bilder som skal bli tatt hvert sekund.</p>
@@ -111,75 +106,58 @@
             <h3>Foto-funksjoner</h3>
             <div class="row">
                 <div class="columns">
-                    <a href="../_img/_portfolio/gopro/burst-rates.png">
-                        <img class="inline-img" src="../_img/_portfolio/gopro/burst-rates.png">
-                    </a>
+                    <a href="/_img/_portfolio/gopro/burst-rates.png"> <img class="inline-img" src="/_img/_portfolio/gopro/burst-rates.png"> </a>
                 </div>
             </div>
             <p>Et annet eksempel er oversikten over antall bilder per sekund. etter samme lest som eksemplet ovenfor satte jeg opp alle mulige verdier av bilder/sekund, og lot sirkelene indikere hvorvidt modellen støttet det gitte antall bilder per sekund eller ikke.</p>
             <p>Og nå er det ikke vanskelig å raskt konstatere at de to modellene lengst til venstre er identiske når det kommer til bilder/sekund.</p>
-            
             <h2>Megapiksler</h2>
             <div class="row">
                 <div class="columns">
-                    <a href="../_img/_portfolio/gopro/Cameras.png">
-                        <img class="inline-img" src="../_img/_portfolio/gopro/megapixles.png">
-                    </a>
+                    <a href="/_img/_portfolio/gopro/Cameras.png"> <img class="inline-img" src="/_img/_portfolio/gopro/megapixles.png"> </a>
                 </div>
             </div>
             <p>For å skille litt mellom de modellene med flest og færrest megapiksler lot jeg tekststørrelsen øke i takt med piksel-tettheten. </p>
             <h2>Resultatet</h2>
             <p>Og her har du resultatet av redesignet.</p>
             <div class="row">
-                <a class="columns" href="../_img/_portfolio/gopro/camera-comparison-full.png"><img src="../_img/_portfolio/gopro/camera-comparison-full.png"></a>
-
+                <a class="columns" href="/_img/_portfolio/gopro/camera-comparison-full.png"><img src="/_img/_portfolio/gopro/camera-comparison-full.png"></a>
             </div>
         </div>
     </article>
-    
     <footer>
         <div class="row columns">
-            <div class="row columns">
-                <a class="button small-6 medium-3 columns" href="http://www.facebook.com/arntisaksen"> 
-                    <img class="img_icon" src="../_img/icon_facebook.png" alt="Facebook logo">
-                    
-                </a>
-                <a class="button small-6 medium-3 columns" href="http://www.twitter.com/arntisaksen"> 
-                    <img class="img_icon" src="../_img/icon_twitter.png" alt="Twitter logo">
-                </a>
-                <a class="button small-6 medium-3 columns" href="http://www.instagram.com/arntisaksen"> 
-                    <img class="img_icon" src="../_img/icon_instagram.png" alt="Instagram logo">
-
-                </a>
-                <a class="button small-6 medium-3 columns" href="http://www.flickr.com/arntisaksen"> 
-                    <img class="img_icon" src="../_img/icon_flickr.png" alt="Flickr logo">
-                </a>
-            </div>
             <div class="row">
                 <div class="medium-6 columns">
+                    <div class=" columns">
+                        <a class="button small-6 medium-6 large-3 columns" href="http://www.facebook.com/arntisaksen"> <img class="img_icon" src="/_img/icon_facebook.png" alt="Facebook logo"> </a>
+                        <a class="button small-6 medium-6 large-3 columns" href="http://www.twitter.com/arntisaksen"> <img class="img_icon" src="/_img/icon_twitter.png" alt="Twitter logo"> </a>
+                        <a class="button small-6 medium-6 large-3 columns" href="http://www.instagram.com/arntisaksen"> <img class="img_icon" src="/_img/icon_instagram.png" alt="Instagram logo"> </a>
+                        <a class="button small-6 medium-6 large-3 columns" href="http://www.flickr.com/arntisaksen"> <img class="img_icon" src="/_img/icon_flickr.png" alt="Flickr logo"> </a>
+                    </div>
                 </div>
                 <div class="medium-6 columns">
-                    <blockquote>
-                        <a href="https://www.vitsoe.com/eu/about/good-design"><h3 class="subheader">2. Good design makes a product useful</h3></a>
-                        <p>
-                            A product is bought to be used. It has to satisfy certain criteria, not only functional, but also psychological and aesthetic. Good design emphasises the usefulness of a product whilst disregarding anything that could possibly detract from it.
-                        </p>
-                        <p class="text-right">- Dieter Rams</p>
-                </blockquote>
+                    <blockquote id='principle-quote'>
+                        <a id="rule" href="https://www.vitsoe.com/eu/about/good-design"></a>
+                    </blockquote>
                 </div>
-                
             </div>
-            <div class="row">
-                <p class="text-center">arntisaksen.com &copy;2016</p>
+            <div id="copyright-row" class="row">
+                <div class="text-center">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0</a></div>
+                <p class="text-center">arntisaksen.com &copy;2017</p>
             </div>
-            <section id="bottom-img" class="show-for-small-only row"> 
-                <img src="../_img/arnt_poly_xx_reverse.png" alt="Image of my face"> 
-            </section>
+            <section id="bottom-img" class="show-for-small-only row"> <img src="/_img/arnt_poly_xx_reverse.png" alt="Image of my face"> </section>
         </div>
     </footer>
-    <script src="../_js/vendor/jquery.js"></script>
-    <script src="../_js/vendor/what-input.js"></script>
-    <script src="../_js/vendor/foundation.js"></script>
-    <script src="../_js/app.js"></script>
+    <script language="javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Libraries -->
+    <script language="javascript" type="text/javascript" src="/_js/vendor/p5.js"></script>
+    <script language="javascript" type="text/javascript" src="/_js/vendor/p5.dom.js"></script>
+    <script language="javascript" type="text/javascript" src="/_js/vendor/what-input.js"></script>
+    <script language="javascript" type="text/javascript" src="/_js/vendor/foundation.js"></script>
+    <!--  Javascript -->
+    <script language="javascript" type="text/javascript" src="/_js/app.js"></script>
+    <script language="javascript" type="text/javascript" src="/_js/addPrinciples.js"></script>
 </body>
+
 </html>
